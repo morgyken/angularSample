@@ -8,4 +8,14 @@ import {Component } from '@angular/core'
     styleUrls: ['./morgan.component.css']
   }
 )
-export class MorganComponent {}
+export class MorganComponent {
+  fname: string = "morgan";
+  lname: string ="Kennedy";
+  getLastName(){
+    return this.lname;
+  }
+
+  getFirstName(){
+    return this.fname;
+  }
+}
