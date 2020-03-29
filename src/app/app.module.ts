@@ -6,17 +6,25 @@ import {HttpModule} from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
-import {WarningAlertComponent} from './warning-alert/warning-alert.component'
+import {WarningAlertComponent} from './warning-alert/warning-alert.component';
+import {ServerComponent} from './server/server.component'; // pointing to .ts file
+
+//import morgan component
+import {MorganComponent} from './morgan/morgan.component';
+import { LilianOsuriComponent } from './lilian-osuri/lilian-osuri.component'
 
 @NgModule({
   declarations: [
     AppComponent,
+    ServerComponent,
     SuccessAlertComponent,
-    WarningAlertComponent
+    WarningAlertComponent,
+    MorganComponent,
+    LilianOsuriComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     FormsModule,
     HttpModule
   ],
